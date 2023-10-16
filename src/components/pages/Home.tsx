@@ -18,7 +18,7 @@ export const Home = memo(() => {
     <View>
       <Text>Home</Text>
 
-      <Cards onClick={showModal} />
+      <Cards onClick={showModal()} />
       <UserModal isOpen={visible} />
     </View>
   );
