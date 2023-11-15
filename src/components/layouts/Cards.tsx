@@ -12,7 +12,7 @@ export const Cards: React.FC<Props> = memo((props) => {
 
   return (
     <View>
-      <Card style={styles.container} onPress={() => onClick()}>
+      <Card style={styles.container} onPress={onClick}>
         <Card.Title title="Card Title" />
         <Card.Content>
           <Text variant="bodyMedium">Card content</Text>

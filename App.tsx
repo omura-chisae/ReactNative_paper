@@ -1,23 +1,25 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
+import { Provider as PaperProvider } from "react-native-paper";
 import { Home } from "./src/components/pages/Home";
-import { PaperProvider } from "react-native-paper";
 import { Header } from "./src/components/layouts/Header";
 
 export default function App() {
   return (
-    <View
-      style={{
-        flex: 1,
-        // alignItems: "center",
-        justifyContent: "center",
-      }}
-    >
-      <Header />
-      <View style={styles.container}>
-        <Home />
+    <PaperProvider>
+      <View
+        style={{
+          flex: 1,
+          // alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <Header />
+        <View style={styles.container}>
+          <Home />
+        </View>
       </View>
-    </View>
+    </PaperProvider>
   );
 }
 

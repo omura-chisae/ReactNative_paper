@@ -10,7 +10,7 @@ type Props = {
 export const PrimaryButton: React.FC<Props> = memo((props) => {
   const { children, onClick } = props;
   return (
-    <Button mode="contained" buttonColor="#68B3E2">
+    <Button mode="contained" buttonColor="#68B3E2" onPress={onClick}>
       {children}
     </Button>
   );
